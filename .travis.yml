@@ -14,6 +14,7 @@ before_install:
   - export CHROME_BIN=chromium-browser
   - echo "--no-sandbox" > ~/.config/chromium-flags.conf
   - export KARMA_SINGLE_RUN=true
+  - sh -e chmod 755 /usr/lib/chromium-browser/chrome-sandbox
 
 before_script:
   - npm install -g firebase-tools
